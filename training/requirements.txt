@@ -1,0 +1,12 @@
+opencv-python
+torch
+torchvision
+tensorboardX
+yacs
+albumentations
+sam-pytorch
+tqdm
+tabulate
+onnx
+onnxruntime
+onnxsim

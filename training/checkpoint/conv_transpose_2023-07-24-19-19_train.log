@@ -1,0 +1,67 @@
+2023-07-24 19:19:02,583 Namespace(cfg='configs/lpcv/pidnet_small_lpcv.yaml', savedir='output/conv_transpose', seed=100, opts=[])
+2023-07-24 19:19:02,584 AUTO_RESUME: False
+CUDNN:
+  BENCHMARK: False
+  DETERMINISTIC: False
+  ENABLED: True
+CV2_THREADS: 8
+DATASET:
+  DATASET: lpcv
+  EXTRA_TRAIN_SET: 
+  NUM_CLASSES: 14
+  ROOT: data/
+  TEST_SET: list/lpcv/val.lst
+  TRAIN_SET: list/lpcv/train.lst
+GPUS: (0,)
+LOG_DIR: log
+LOSS:
+  BALANCE_WEIGHTS: [0.4, 1.0]
+  CLASS_BALANCE: False
+  OHEMKEEP: 131072
+  OHEMTHRES: 0.9
+  SB_WEIGHTS: 1.0
+  USE_OHEM: True
+MODEL:
+  ALIGN_CORNERS: True
+  NAME: pidnet_s
+  NUM_OUTPUTS: 2
+  PRETRAINED: pretrained_models/imagenet/PIDNet_S_ImageNet.pth
+OUTPUT_DIR: output
+PIN_MEMORY: True
+PRINT_FREQ: 200
+TEST:
+  BASE_SIZE: 512
+  BATCH_SIZE_PER_GPU: 1
+  FLIP_TEST: False
+  IMAGE_SIZE: [512, 512]
+  MODEL_FILE: 
+  MULTI_SCALE: False
+  OUTPUT_INDEX: 1
+TORCH_THREADS: 8
+TRAIN:
+  BASE_SIZE: 512
+  BATCH_SIZE_PER_GPU: 16
+  BEGIN_EPOCH: 0
+  END_EPOCH: 400
+  EXTRA_EPOCH: 0
+  EXTRA_LR: 0.001
+  FLIP: False
+  IGNORE_LABEL: 255
+  IMAGE_SIZE: [512, 512]
+  LR: 0.0003
+  MOMENTUM: 0.9
+  MULTI_SCALE: True
+  NESTEROV: False
+  OPTIMIZER: radam
+  RESUME: False
+  SAM: False
+  SAM_RHO: 0.05
+  SCALE_FACTOR: 16
+  SHUFFLE: True
+  USE_AUX_HEADS: True
+  WD: 0.00075
+WORKERS: 8
+2023-07-24 19:51:31,782 NaN or Inf found in input tensor.
+2023-07-24 20:54:14,590 NaN or Inf found in input tensor.
+2023-07-24 21:24:06,786 NaN or Inf found in input tensor.
+2023-07-24 23:16:34,482 NaN or Inf found in input tensor.
