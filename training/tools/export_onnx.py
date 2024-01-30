@@ -25,7 +25,13 @@ def parse_args():
 def main():
     args = parse_args()
 
-    model = models.pidnet.get_seg_model(model_name="pidnet_s", num_classes=14, checkpoint_path=args.checkpoint)
+    model = models.pidnet.get_seg_model(
+        model_name="pidnet_s",
+        num_classes=14,
+        checkpoint_path=args.checkpoint,
+        aux_heads=True,
+        strict_state_dict=False,
+    )
     model.eval()
 
     with tempfile.TemporaryDirectory() as tempdir:
