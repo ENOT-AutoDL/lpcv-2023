@@ -1,4 +1,4 @@
-# # LPCV 2023 Challenge - ENOT Pipeline
+# LPCV 2023 Challenge - ENOT Pipeline
 
 This document serves as the documentation for the solution, providing an overview of the training and inference model, as well as the ablation study conducted.
 
