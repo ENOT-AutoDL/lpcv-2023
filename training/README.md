@@ -14,26 +14,23 @@ unzip data.zip
 ``` 
 
 ## Training
-
 To reproduce our results, you should train a model with default configuration, specified in `configs/lpcv/pidnet_small_lpcv.yaml`. For training model use the following command:
 ```bash
 bash scripts/train.sh
 ```
 
 ## Validation
-
 To validate your model, you can use the following command:
 ```bash
 bash scripts/val.sh
 ```
 
 ## Converting to ONNX 
-
 For converting model to ONNX, use the following command:
 ```bash
 bash scripts/export_onnx.sh
 ```
 
-When you will get the .onnx of trained model, you should use [lpcv-2023-inference](https://github.com/LPCV-org/lpcv-2023-inference) repository for evaluating your model on Jetson Nano.
+When you will get the .onnx of trained model, you should use `inference` directory for evaluating your model on Jetson Nano.
 
 To contact us, please visit https://enot.ai or email us at enot@enot.ai.
